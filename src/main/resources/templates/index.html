@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+
+    <script src="https://cdn.bootcss.com/angular.js/1.6.9/angular.min.js"></script>
+
+    <script src="/static/js/index.js"></script>
+</head>
+<body ng-app="indexApp" ng-controller="indexController">
+
+<div >
+    <label>身份证:</label>
+    <input type="text" ng-model="cardNo" />
+    <button type="button" ng-click="analysis()">解析</button>
+</div>
+<div class="ng-hide" ng-show="showPopus">
+    <p> <span>出生日期:</span> <span ng-bind="birthday"></span> </p>
+    <p> <span>户籍地址:</span> <span ng-bind="address"></span> </p>
+    <p> <span> 年 龄 : </span> <span ng-bind="age"></span> </p>
+    <p> <span> 性 别 : </span> <span ng-bind="sex"></span> </p>
+
+</div>
+
+</body>
+</html>
