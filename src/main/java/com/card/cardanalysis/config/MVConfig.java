@@ -17,7 +17,6 @@ import java.util.List;
 @Configuration
 public class MVConfig extends WebMvcConfigurerAdapter {
 
-
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
